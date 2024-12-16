@@ -48,12 +48,12 @@ public class Part1_Test {
     System.out.println(response);
     assertThat(response.size() >= 6).isTrue();
 
-    assertThat(response.toString().contains("Users")).isTrue();
-    assertThat(response.toString().contains("Tags")).isTrue();
-    assertThat(response.toString().contains("Posts")).isTrue();
-    assertThat(response.toString().contains("Post_Tags")).isTrue();
-    assertThat(response.toString().contains("Comments")).isTrue();
-    assertThat(response.toString().contains("Boards")).isTrue();
+    assertThat(response.toString().contains("users")).isTrue();
+    assertThat(response.toString().contains("tags")).isTrue();
+    assertThat(response.toString().contains("posts")).isTrue();
+    assertThat(response.toString().contains("post_tags")).isTrue();
+    assertThat(response.toString().contains("comments")).isTrue();
+    assertThat(response.toString().contains("boards")).isTrue();
 
     // 결과 출력
     for(HashMap<String, Object> map: response) {
